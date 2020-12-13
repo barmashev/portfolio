@@ -281,6 +281,15 @@ body {
   font-size: 1.6rem;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .header {
   background: linear-gradient(45deg, rgba(132, 77, 54, 0.5), rgba(71, 72, 83, 0.5)), url("../assets/hero.jpg");
   background-size: cover;
@@ -299,14 +308,13 @@ body {
 }
 
 .header__nav ul {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 30%;
+  width: 760px;
 }
 
 .header__nav ul li {
@@ -327,8 +335,6 @@ body {
 }
 
 .header__nav a {
-  text-decoration: none;
-  color: white;
   font-size: 2rem;
 }
 
@@ -356,4 +362,37 @@ body {
 
 .header__heading p {
   font-size: 3rem;
+}
+
+.header__social {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__social a {
+  font-size: 3rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
+}
+
+.header__social a:hover,
+.header__social a:focus {
+  color: #86b3d1;
+  -webkit-box-shadow: 0 0 6px #23adff;
+          box-shadow: 0 0 6px #23adff;
 }

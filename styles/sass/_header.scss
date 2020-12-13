@@ -15,10 +15,9 @@
     padding: 30px 0;
 
     ul {
-      list-style-type: none;
       display: flex;
       justify-content: space-between;
-      width: 30%;
+      width: 760px;
 
       li {
         background-image: linear-gradient($accent, $accent);
@@ -37,8 +36,6 @@
     }
 
     a {
-      text-decoration: none;
-      color: white;
       font-size: 2rem;
     }
   }
@@ -57,6 +54,29 @@
 
     p {
       font-size: 3rem;
+    }
+  }
+
+  &__social {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    a {
+      font-size: 3rem;
+      transition: all 0.5s;
+      margin: 0;
+      padding: 0;
+    }
+
+    a:hover,
+    a:focus {
+      color: $accent;
+      box-shadow: 0 0 6px rgba(35, 173, 278, 1);
     }
   }
 }
