@@ -300,9 +300,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   padding: 30px 0;
 }
@@ -315,6 +315,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 760px;
+  margin: 0 50px;
 }
 
 .header__nav ul li {
