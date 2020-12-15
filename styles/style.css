@@ -304,6 +304,7 @@ a {
   color: white;
 }
 
+.btn,
 button {
   border: #aaa0a0;
   padding: 5px 10px;
@@ -317,9 +318,13 @@ button {
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   font-weight: bolder;
+  color: black;
+  text-shadow: none;
 }
 
+.btn:hover,
 button:hover,
+.btn:focus,
 button:focus {
   background-position: left bottom;
 }
@@ -492,8 +497,10 @@ button:focus {
   margin-right: 40px;
 }
 
-.about button {
+.about .btn {
   padding: 10px 20px;
+  font-weight: normal;
+  margin-left: 0;
 }
 
 .skills {
