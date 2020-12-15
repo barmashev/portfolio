@@ -1,5 +1,5 @@
 .skills {
-  background: linear-gradient(45deg, $beige 25%, $mainBackground 25%);
+  background: linear-gradient(60deg, $beige 25%, $mainBackground 25%);
 
   h2 {
     text-align: center;
@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 100px auto;
   }
 
   &__item {

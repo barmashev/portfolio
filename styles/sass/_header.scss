@@ -18,6 +18,14 @@
     width: 70px;
   }
 
+  &__arrow img {
+    transition: all 0.3s;
+  }
+
+  &__arrow:hover img {
+    transform: scale(1.25);
+  }
+
   &__nav {
     position: fixed;
     display: flex;

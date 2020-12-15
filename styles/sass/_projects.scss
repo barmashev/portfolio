@@ -1,0 +1,27 @@
+.projects {
+  background: linear-gradient(120deg, $mainBackground 75%, $reddish 25%);
+  text-align: center;
+
+  & > p a {
+    color: $accent;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 30%;
+    text-align: center;
+    margin: 40px 0;
+    text-shadow: 2px 2px $mainBackground;
+
+    .technologies {
+      font-weight: bold;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+}
