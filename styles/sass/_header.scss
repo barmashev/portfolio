@@ -6,11 +6,23 @@
     ),
     url("../assets/hero.jpg");
   background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  &__arrow {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    width: 70px;
+  }
 
   &__nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 30px 0;
 
@@ -26,7 +38,7 @@
         background-size: 0% 2px;
         background-repeat: no-repeat;
         transition: background-size 0.5s, background-position 0s 0.5s;
-        padding: 5px 0;
+        padding: 2px 0;
       }
 
       li:hover,
@@ -66,6 +78,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 
     a {
       font-size: 3rem;

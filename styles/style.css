@@ -279,6 +279,16 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 3rem;
+  margin: 0;
 }
 
 ul {
@@ -290,9 +300,27 @@ a {
   color: white;
 }
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 .header {
   background: linear-gradient(45deg, rgba(132, 77, 54, 0.5), rgba(71, 72, 83, 0.5)), url("../assets/hero.jpg");
   background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.header__arrow {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+  width: 70px;
 }
 
 .header__nav {
@@ -303,6 +331,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 30px 0;
 }
@@ -326,7 +357,7 @@ a {
   background-repeat: no-repeat;
   -webkit-transition: background-size 0.5s, background-position 0s 0.5s;
   transition: background-size 0.5s, background-position 0s 0.5s;
-  padding: 5px 0;
+  padding: 2px 0;
 }
 
 .header__nav ul li:hover,
@@ -381,6 +412,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__social a {
@@ -396,4 +430,69 @@ a {
   color: #86b3d1;
   -webkit-box-shadow: 0 0 6px #23adff;
           box-shadow: 0 0 6px #23adff;
+}
+
+.about {
+  background: linear-gradient(120deg, #474853 75%, #8e8268 25%);
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  line-height: 1.7;
+  color: white;
+  text-shadow: 2px 2px #474853;
+}
+
+.about__text,
+.about img {
+  margin: 100px 0;
+}
+
+.about img {
+  margin-right: 40px;
+}
+
+.skills {
+  background: linear-gradient(45deg, #aaa0a0 25%, #474853 25%);
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.skills__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px auto;
+}
+
+.skills__item {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+}
+
+.skills i {
+  font-size: 100px;
 }
