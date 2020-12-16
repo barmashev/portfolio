@@ -573,3 +573,91 @@ button:focus {
 .projects__item p {
   text-align: left;
 }
+
+.contact {
+  background: linear-gradient(60deg, #554e3e 25%, #474853 25%);
+  text-align: center;
+}
+
+.contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px auto;
+}
+
+.contact__content a {
+  color: #86b3d1;
+}
+
+.contact__text {
+  text-align: left;
+  padding-right: 40px;
+}
+
+.contact form {
+  width: 65%;
+}
+
+.contact .formItem {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.contact .formItem .input {
+  width: 100%;
+  height: 50px;
+  color: white;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.contact .formItem .input:focus + label span,
+.contact .formItem .input:valid + label span {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  font-size: 1.4rem;
+  color: #86b3d1;
+}
+
+.contact .formItem .input:focus + label::after,
+.contact .formItem .input:valid + label::after {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.contact .formItem label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 3px solid white;
+}
+
+.contact .formItem label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #86b3d1;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact .formItem span {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
