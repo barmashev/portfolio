@@ -17,6 +17,22 @@
     }
   }
 
+  &__social {
+    display: flex;
+    padding: 0;
+    a {
+      color: white;
+      font-size: 3rem;
+      margin-right: 5px;
+      transition: all 0.3s;
+    }
+
+    a:hover,
+    a:focus {
+      color: $accent;
+    }
+  }
+
   form {
     width: 65%;
 

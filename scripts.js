@@ -33,8 +33,6 @@ $(function () {
     const skills = $(".skills").offset().top;
     const projects = $(".projects").offset().top;
     const contact = $(".contact").offset().top;
-    console.log(winScroll);
-    console.log(about / 2);
 
     if (winScroll > about / 2) {
       $(".header__nav").addClass("navContainerActive");
@@ -44,7 +42,6 @@ $(function () {
 
     if (winScroll < about) {
       $(".navActive").removeClass("navActive");
-      $(".navHome").addClass("navActive");
     }
 
     if (winScroll >= about) {

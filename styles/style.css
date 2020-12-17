@@ -293,7 +293,7 @@ body {
 
 h2 {
   font-size: 3rem;
-  margin: 0;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -308,6 +308,10 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+
+section {
+  padding: 120px 0;
 }
 
 .btn,
@@ -432,6 +436,8 @@ button:focus {
 
 .header .navContainerActive a {
   color: #474853;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .header a.navActive {
@@ -483,6 +489,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 3;
 }
 
 .header__social a {
@@ -496,8 +503,6 @@ button:focus {
 .header__social a:hover,
 .header__social a:focus {
   color: #86b3d1;
-  -webkit-box-shadow: 0 0 6px #23adff;
-          box-shadow: 0 0 6px #23adff;
 }
 
 .about {
@@ -515,11 +520,6 @@ button:focus {
   line-height: 1.7;
   color: white;
   text-shadow: 2px 2px #474853;
-}
-
-.about__text,
-.about img {
-  margin: 100px 0;
 }
 
 .about img {
@@ -617,6 +617,7 @@ button:focus {
 
 .projects__item .technologies {
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .projects__item:hover, .projects__item:focus {
@@ -660,6 +661,26 @@ button:focus {
 
 .contact__text p {
   text-shadow: 2px 2px #474853;
+}
+
+.contact__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.contact__social a {
+  color: white;
+  font-size: 3rem;
+  margin-right: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact__social a:hover,
+.contact__social a:focus {
+  color: #86b3d1;
 }
 
 .contact form {

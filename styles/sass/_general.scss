@@ -34,7 +34,7 @@ $contact: #554e3e;
 
 h2 {
   font-size: 3rem;
-  margin: 0;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -49,6 +49,10 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+
+section {
+  padding: 120px 0;
 }
 
 .btn,
