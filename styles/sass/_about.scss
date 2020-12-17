@@ -21,11 +21,28 @@
 
   img {
     margin-right: 40px;
+    width: 35%;
   }
 
   .btn {
     padding: 10px 20px;
     font-weight: normal;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 940px) {
+  .about {
+    &__content {
+      font-size: 1.4rem;
+      flex-direction: column;
+    }
+
+    &__text {
+      text-align: center;
+      p {
+        text-align: left;
+      }
+    }
   }
 }

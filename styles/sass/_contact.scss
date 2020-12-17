@@ -83,3 +83,26 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .contact {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__text,
+    form {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .btn {
+      padding: 10px 20px;
+    }
+
+    .input:focus + label span,
+    .input:valid + label span {
+      font-size: 1rem;
+    }
+  }
+}

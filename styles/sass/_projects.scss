@@ -21,15 +21,22 @@
     .technologies {
       font-weight: bold;
     }
-
-    p {
-      text-align: left;
-    }
   }
 
   &__item:hover,
   &__item:focus {
     transform: translateY(-5%) !important;
     box-shadow: 0 0 6px $accent;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__content {
+    flex-direction: column;
+  }
+
+  .projects__item {
+    width: 95%;
+    margin: 0 auto;
   }
 }
