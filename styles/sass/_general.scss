@@ -16,6 +16,11 @@ img {
   width: 100%;
 }
 
+html,
+body {
+  overflow: visible;
+}
+
 //COLORS
 
 $accent: #86b3d1;
@@ -30,6 +35,7 @@ $contact: #554e3e;
 h2 {
   font-size: 3rem;
   margin: 0;
+  text-align: center;
 }
 
 h3 {

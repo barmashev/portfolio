@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/style.css" />
 
     <title>Ermek Barmashev, Web Developer in Toronto</title>
@@ -59,7 +60,11 @@
     </header>
     <section class="about" id="about">
       <div class="about__content container">
-        <img src="./assets/me.jpg" alt="6/10 looking dude, which is me" />
+        <img
+          src="./assets/me.jpg"
+          alt="6/10 looking dude, which is me"
+          data-aos="fade-right"
+        />
         <div class="about__text">
           <h2>About me</h2>
           <p>
@@ -83,52 +88,52 @@
     </section>
     <section class="skills">
       <h2>Skills</h2>
-      <div class="skills__content container">
+      <div class="skills__content container" data-aos="fade-right">
         <div class="skills__item">
           <i class="fab fa-html5"></i>
           <h3>HTML</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-right">
           <i class="fab fa-css3-alt"></i>
           <h3>CSS</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-left">
           <i class="fab fa-sass"></i>
           <h3>SASS</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-left">
           <i class="fab fa-js-square"></i>
           <h3>JavaScript</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-right">
           <i class="devicon-jquery-plain"></i>
           <h3>JQuery</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-right">
           <i class="fab fa-react"></i>
           <h3>React</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-left">
           <i class="devicon-typescript-plain"></i>
           <h3>TypeScript</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-left">
           <i class="devicon-git-plain"></i>
           <h3>Git</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-right">
           <i class="devicon-github-original"></i>
           <h3>GitHub</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-right">
           <i class="fas fa-mobile"></i>
           <h3>Responsive Design</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-left">
           <i class="fas fa-universal-access"></i>
           <h3>Accessibility</h3>
         </div>
-        <div class="skills__item">
+        <div class="skills__item" data-aos="fade-left">
           <i class="fas fa-burn"></i>
           <h3>Firebase</h3>
         </div>
@@ -138,10 +143,10 @@
       <h2>Featured Projects</h2>
       <p>
         More projects can be found on my
-        <a href="https://github.com/barmashev48">GitHub page</a>
+        <a href="https://github.com/barmashev48" target="_blank">GitHub page</a>
       </p>
       <div class="projects__content container">
-        <div class="projects__item">
+        <div class="projects__item" data-aos="fade-down">
           <h3>Likely Match</h3>
           <img src="./assets/likely.jpg" alt="Likely Match app preview" />
           <p class="technologies">
@@ -154,7 +159,7 @@
           <button>Live Project</button>
           <button>Github Repo</button>
         </div>
-        <div class="projects__item">
+        <div class="projects__item" data-aos="fade-down">
           <h3>Likely Match</h3>
           <img src="./assets/likely.jpg" alt="Likely Match app preview" />
           <p class="technologies">
@@ -167,7 +172,7 @@
           <button>Live Project</button>
           <button>Github Repo</button>
         </div>
-        <div class="projects__item">
+        <div class="projects__item" data-aos="fade-down">
           <h3>Likely Match</h3>
           <img src="./assets/likely.jpg" alt="Likely Match app preview" />
           <p class="technologies">
@@ -188,8 +193,8 @@
         <div class="contact__text">
           <h3>Get in touch</h3>
           <p>
-            If you want to schedule a metting or to have a virtual lunch, use
-            this form.
+            If you want to schedule a metting or to have a virtual lunch, feel
+            free to use this form.
           </p>
           <p>
             Alternatively, you can email me directly at
@@ -197,7 +202,7 @@
           </p>
         </div>
         <form action="https://formspree.io/f/xwkwrznr" method="POST">
-          <div class="formItem">
+          <div class="formItem" data-aos="fade-left" data-aos-duration="400">
             <input
               class="input"
               type="text"
@@ -207,11 +212,11 @@
             />
             <label for="name"><span class="contentName">Name</span></label>
           </div>
-          <div class="formItem">
+          <div class="formItem" data-aos="fade-left" data-aos-duration="550">
             <input class="input" type="email" name="_replyto" required />
             <label for="_replyto"><span class="contentName">Email</span></label>
           </div>
-          <div class="formItem">
+          <div class="formItem" data-aos="fade-left" data-aos-duration="700">
             <textarea
               class="input"
               name="text"
@@ -230,13 +235,18 @@
         </form>
       </div>
     </section>
+    <footer>Crafted by Ermek Barmashev in Toronto, Canada</footer>
 
     <script
       src="https://code.jquery.com/jquery-3.4.0.min.js"
       integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./scripts.js"></script>
+
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
       var Tawk_API = Tawk_API || {},

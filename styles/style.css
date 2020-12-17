@@ -286,9 +286,15 @@ img {
   width: 100%;
 }
 
+html,
+body {
+  overflow: visible;
+}
+
 h2 {
   font-size: 3rem;
   margin: 0;
+  text-align: center;
 }
 
 h3 {
@@ -564,6 +570,9 @@ button:focus {
   text-align: center;
   margin: 40px 0;
   text-shadow: 2px 2px #474853;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 10px;
 }
 
 .projects__item .technologies {
@@ -574,16 +583,22 @@ button:focus {
   text-align: left;
 }
 
+.projects__item:hover, .projects__item:focus {
+  -webkit-transform: translateY(-5%) !important;
+          transform: translateY(-5%) !important;
+  -webkit-box-shadow: 0 0 6px #86b3d1;
+          box-shadow: 0 0 6px #86b3d1;
+}
+
 .contact {
   background: linear-gradient(60deg, #554e3e 25%, #474853 25%);
-  text-align: center;
 }
 
 .contact__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 100px auto;
+  text-align: left;
 }
 
 .contact__content a {
@@ -591,12 +606,19 @@ button:focus {
 }
 
 .contact__text {
-  text-align: left;
   padding-right: 40px;
+}
+
+.contact__text p {
+  text-shadow: 2px 2px #474853;
 }
 
 .contact form {
   width: 65%;
+}
+
+.contact form .btn {
+  margin: 10px 0;
 }
 
 .contact .formItem {
@@ -647,7 +669,7 @@ button:focus {
   bottom: -3px;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid #86b3d1;
+  border-bottom: 4px solid #86b3d1;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: all 0.3s;
@@ -660,4 +682,11 @@ button:focus {
   left: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+footer {
+  background-color: #8e8268;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
