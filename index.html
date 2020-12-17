@@ -20,11 +20,31 @@
     <header class="header">
       <nav class="header__nav">
         <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">SKILLS</a></li>
-          <li><a href="">PROJECTS</a></li>
-          <li><a href="">CONTACT</a></li>
+          <li>
+            <a href="" data-destination="header" class="navLink navHome"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a href="" data-destination="about" class="navLink navAbout"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a href="" data-destination="skills" class="navLink navSkills"
+              >SKILLS</a
+            >
+          </li>
+          <li>
+            <a href="" data-destination="projects" class="navLink navProjects"
+              >PROJECTS</a
+            >
+          </li>
+          <li>
+            <a href="" data-destination="contact" class="navLink navContact"
+              >CONTACT</a
+            >
+          </li>
         </ul>
       </nav>
 
@@ -34,7 +54,12 @@
       </div>
 
       <div class="header__arrow">
-        <img src="./assets/arrow.svg" alt="arrow down" />
+        <img
+          src="./assets/arrow.svg"
+          alt="arrow down"
+          data-destination="about"
+          class="navLink"
+        />
       </div>
 
       <ul class="header__social">

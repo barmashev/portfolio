@@ -1,9 +1,5 @@
 .about {
-  background: linear-gradient(
-    120deg,
-    $mainBackground 75%,
-    $secondBackground 25%
-  );
+  background: linear-gradient(120deg, $mainBackground 75%, $reddish 25%);
 
   &__content {
     display: flex;

@@ -341,8 +341,10 @@ button:focus {
   max-width: 1200px;
 }
 
-body {
-  font-size: 1.4rem;
+@media (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
 }
 
 .header {
@@ -386,6 +388,10 @@ body {
   max-width: 100%;
   min-width: 700px;
   padding: 30px 0;
+  width: 100%;
+  z-index: 3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__nav ul {
@@ -418,6 +424,18 @@ body {
 
 .header__nav a {
   font-size: 2rem;
+}
+
+.header .navContainerActive {
+  background-color: #dddddd;
+}
+
+.header .navContainerActive a {
+  color: #474853;
+}
+
+.header a.navActive {
+  color: #844d36;
 }
 
 .header__heading {
@@ -483,7 +501,7 @@ body {
 }
 
 .about {
-  background: linear-gradient(120deg, #474853 75%, #8e8268 25%);
+  background: linear-gradient(120deg, #474853 75%, #844d36 25%);
 }
 
 .about__content {
@@ -532,7 +550,7 @@ body {
 }
 
 .skills {
-  background: linear-gradient(60deg, #aaa0a0 25%, #474853 25%);
+  background: linear-gradient(60deg, #844d36 25%, #474853 25%);
 }
 
 .skills h2 {
@@ -622,7 +640,7 @@ body {
 }
 
 .contact {
-  background: linear-gradient(60deg, #554e3e 25%, #474853 25%);
+  background: linear-gradient(60deg, #844d36 25%, #474853 25%);
 }
 
 .contact__content {
@@ -737,7 +755,7 @@ body {
 }
 
 footer {
-  background-color: #8e8268;
+  background-color: #844d36;
   color: white;
   text-align: center;
   padding: 20px 0;

@@ -81,7 +81,8 @@ button:focus {
 }
 
 //MEDIA
-
-body {
-  font-size: 1.4rem;
+@media (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
 }
