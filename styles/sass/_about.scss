@@ -10,6 +10,10 @@
     text-shadow: 2px 2px $mainBackground;
   }
 
+  &__text {
+    width: 65%;
+  }
+
   img {
     margin-right: 40px;
     width: 35%;

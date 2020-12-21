@@ -270,6 +270,11 @@ html {
   overflow: hidden;
 }
 
+* {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 html {
   font-size: 62.5%;
   margin: 0;
@@ -548,7 +553,7 @@ button:focus {
     font-size: 1.2rem;
   }
   .header__nav {
-    min-width: 100%;
+    width: 300px;
   }
   .header__arrow {
     bottom: 10%;
@@ -670,6 +675,10 @@ button:focus {
   text-shadow: 2px 2px #474853;
 }
 
+.about__text {
+  width: 65%;
+}
+
 .about img {
   margin-right: 40px;
   width: 35%;
@@ -773,7 +782,7 @@ button:focus {
 .projects__item {
   width: 30%;
   text-align: center;
-  margin: 40px 0;
+  margin: 40px 4px;
   text-shadow: 2px 2px #474853;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -790,6 +799,14 @@ button:focus {
           transform: translateY(-5%) !important;
   -webkit-box-shadow: 0 0 6px #86b3d1;
           box-shadow: 0 0 6px #86b3d1;
+}
+
+@media (max-width: 1100px) {
+  .projects .btn {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+  }
 }
 
 @media (max-width: 768px) {
