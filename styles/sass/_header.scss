@@ -36,7 +36,7 @@
     justify-content: flex-end;
     align-items: center;
     max-width: 100%;
-    min-width: 700px;
+    width: 700px;
     padding: 30px 0;
     width: 100%;
     z-index: 3;
@@ -83,7 +83,7 @@
   }
 
   &__heading {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,6 +138,10 @@
       p {
         font-size: 1.2rem;
       }
+    }
+
+    &__nav {
+      min-width: 100%;
     }
 
     &__arrow {

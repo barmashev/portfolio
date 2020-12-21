@@ -400,7 +400,7 @@ button:focus {
       -ms-flex-align: center;
           align-items: center;
   max-width: 100%;
-  min-width: 700px;
+  width: 700px;
   padding: 30px 0;
   width: 100%;
   z-index: 3;
@@ -455,7 +455,7 @@ button:focus {
 }
 
 .header__heading {
-  height: 100vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,6 +546,9 @@ button:focus {
   }
   .header__heading p {
     font-size: 1.2rem;
+  }
+  .header__nav {
+    min-width: 100%;
   }
   .header__arrow {
     bottom: 10%;
