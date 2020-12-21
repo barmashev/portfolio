@@ -349,6 +349,12 @@ button:focus {
   body {
     font-size: 1.4rem;
   }
+  h2 {
+    margin: 20px 0;
+  }
+  section {
+    padding: 30px 0;
+  }
 }
 
 .header {
@@ -356,6 +362,10 @@ button:focus {
   background-size: cover;
   height: 100vh;
   position: relative;
+}
+
+.header input {
+  opacity: 0;
 }
 
 .header__arrow {
@@ -505,6 +515,141 @@ button:focus {
   color: #86b3d1;
 }
 
+@media (max-width: 768px) {
+  .header {
+    /*
+ * Just a quick hamburger
+ */
+    /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+    /*
+ * But let's hide the middle one.
+ */
+    /*
+ * Ohyeah and the last one should go the other direction
+ */
+    /*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+    /*
+ * And let's slide it in from the left
+ */
+  }
+  .header__social {
+    display: none;
+  }
+  .header__heading h1 {
+    font-size: 3rem;
+  }
+  .header__heading p {
+    font-size: 1.2rem;
+  }
+  .header__arrow {
+    bottom: 10%;
+  }
+  .header #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+  }
+  .header #menuToggle a {
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    color: #474853;
+  }
+  .header #menuToggle a:hover {
+    color: tomato;
+  }
+  .header #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 21px;
+    left: -5px;
+    cursor: pointer;
+    z-index: 2;
+    /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  .header #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    -webkit-transform-origin: 4px 0px;
+            transform-origin: 4px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  .header #menuToggle span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  .header #menuToggle span:nth-last-child(2) {
+    -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+  }
+  .header #menuToggle input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-2px, -1px);
+            transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  .header #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  .header #menuToggle input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+            transform: rotate(-45deg) translate(0, -1px);
+  }
+  .header #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 400px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  .header #menuToggle input:checked ~ ul {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 .about {
   background: linear-gradient(120deg, #474853 75%, #844d36 25%);
 }
@@ -540,6 +685,10 @@ button:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .about img {
+    width: 250px;
+    margin: 0;
   }
   .about__text {
     text-align: center;
@@ -585,6 +734,19 @@ button:focus {
 
 .skills i {
   font-size: 100px;
+}
+
+@media (max-width: 600px) {
+  .skills__item {
+    width: 30%;
+    margin: 15px 0;
+  }
+  .skills__item h3 {
+    text-align: center;
+  }
+  .skills i {
+    font-size: 5rem;
+  }
 }
 
 .projects {
@@ -637,6 +799,7 @@ button:focus {
   .projects__item {
     width: 95%;
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 

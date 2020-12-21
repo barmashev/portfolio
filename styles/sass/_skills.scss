@@ -23,3 +23,20 @@
     font-size: 100px;
   }
 }
+
+@media (max-width: 600px) {
+  .skills {
+    &__item {
+      width: 30%;
+      margin: 15px 0;
+
+      h3 {
+        text-align: center;
+      }
+    }
+
+    i {
+      font-size: 5rem;
+    }
+  }
+}
