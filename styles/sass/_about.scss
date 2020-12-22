@@ -32,6 +32,11 @@
       font-size: 1.4rem;
       flex-direction: column;
     }
+    .btn {
+      margin: 20px auto;
+      display: block;
+      width: 150px;
+    }
 
     img {
       width: 250px;
@@ -44,5 +49,11 @@
         text-align: left;
       }
     }
+  }
+}
+
+@media (max-width: 940px) {
+  .about__text {
+    width: 100%;
   }
 }

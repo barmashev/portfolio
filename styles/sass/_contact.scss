@@ -4,6 +4,7 @@
   &__content {
     display: flex;
     text-align: left;
+    overflow: hidden;
 
     a {
       color: $accent;

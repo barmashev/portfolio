@@ -270,11 +270,6 @@ html {
   overflow: hidden;
 }
 
-* {
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
 html {
   font-size: 62.5%;
   margin: 0;
@@ -348,6 +343,8 @@ button:focus {
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @media (max-width: 768px) {
@@ -698,6 +695,11 @@ button:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .about .btn {
+    margin: 20px auto;
+    display: block;
+    width: 150px;
+  }
   .about img {
     width: 250px;
     margin: 0;
@@ -707,6 +709,12 @@ button:focus {
   }
   .about__text p {
     text-align: left;
+  }
+}
+
+@media (max-width: 940px) {
+  .about__text {
+    width: 100%;
   }
 }
 
@@ -832,6 +840,7 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
   text-align: left;
+  overflow: hidden;
 }
 
 .contact__content a {
