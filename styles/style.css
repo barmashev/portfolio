@@ -712,7 +712,7 @@ button:focus {
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 500px) {
   .about__text {
     width: 100%;
   }
