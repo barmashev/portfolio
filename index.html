@@ -299,19 +299,27 @@
               class="input"
               type="text"
               name="name"
+              id="name"
               required
               autocomplete="off"
             />
             <label for="name"><span class="contentName">Name</span></label>
           </div>
           <div class="formItem" data-aos="fade-left" data-aos-duration="550">
-            <input class="input" type="email" name="_replyto" required />
+            <input
+              class="input"
+              id="_replyto"
+              type="email"
+              name="_replyto"
+              required
+            />
             <label for="_replyto"><span class="contentName">Email</span></label>
           </div>
           <div class="formItem" data-aos="fade-left" data-aos-duration="700">
             <textarea
               class="input"
               name="text"
+              id="text"
               required
               cols="30"
               rows="10"
@@ -335,7 +343,7 @@
     <script src="./scripts.js"></script>
 
     <!-- Start of Tawk.to Script-->
-    <script type="text/javascript">
+    <script>
       var Tawk_API = Tawk_API || {},
         Tawk_LoadStart = new Date();
       (function () {
